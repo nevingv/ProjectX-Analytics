@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.Map;
 @Getter
 @ToString
 @Document(collection = "customers")
+@TypeAlias("Customers")
 public class Customers {
     private String username;
     private String name;

@@ -2,6 +2,7 @@ package com.projectx.analytics.model;
 
 import lombok.*;import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @Getter
 @ToString
 @Document(collection = "accounts")
+@TypeAlias("Accounts")
 public class Accounts {
 
     @Id
